@@ -66,7 +66,16 @@ function doubleLetters (string) {
       }
     }
     
-    console.log(r)  
+    console.log()  
+
+
+    var doubleLetters="abc";
+    console.log(
+        doubleLetters.split('').map(function(add) {
+            return add + add;
+        }).join('')
+        
+    )
            
       
       
@@ -112,45 +121,13 @@ Examples:
 
 // const numbers =([1,2,3], 0);
 // const numbers =([1,2,3], 5);
-function multiplyNumbers(num) {
-    return num * 0;
-  } 
+var arrayNum = [1, 2, 3];
+var multiplyNumbers = arrayNum.map(function(num) {
+return num * 0;
+  });
+  console.log(multiplyNumbers); 
+
   
-  // create an array of arbitrary numbers and store the 
-  // array in the variable arr
-  var arr = [1, 2, 3];  
-  
-  // create an empty object
-  var obj = {};
-  
-  for (var i = 0; i < arr.length; i++) {
-  
-    // the key will be the original number
-    var key = arr[i].toString();
-  
-    // the value will be the doubled number
-    var value = doubling(arr[i]);
-  
-    obj[key] = value;
-  
-  } 
-  
-  
-  
-  // print the final object 
-  obj;
-
-
-
- 
-
-
-
-
-
-
-
-
 // /*
 // ----------------------------------------
 // CHALLENGE
